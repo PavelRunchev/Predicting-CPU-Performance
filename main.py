@@ -160,7 +160,9 @@ port = int(os.environ.get("PORT", 10000))
 ui.run(title="Predicting CPU Performance",
        host="0.0.0.0",
        port=port,
-       show=False)
+       show=False,
+       reload=False
+       )
 
 
 
