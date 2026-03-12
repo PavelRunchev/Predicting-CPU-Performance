@@ -1,0 +1,6 @@
+nicegui
+scikit-learn
+numpy
+pandas
+matplotlib
+uvicorn

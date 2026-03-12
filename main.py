@@ -1,6 +1,6 @@
-
+import os
 from nicegui import ui
-
+import matplotlib
 
 from table import cpu_table
 from models.linear_regression import predict_with_linear_regression, get_model_linear_regression
@@ -25,6 +25,8 @@ from modelInfo.model_info_gradient_boosting import get_model_info_gradient_boost
 from evaluation.benchmark import run_benchmark
 from evaluation.model_categories import show_model_categories
 from evaluation.model_comparison_table import get_model_comparison_table
+
+matplotlib.use("Agg")
 
 def build_ui():
     ui.add_head_html("""
@@ -154,6 +156,7 @@ def build_ui():
 
 build_ui()
 
-ui.run(title="CPU Performance Prediction System", reload=True)
+ui.run(title="Predicting CPU Performance", host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+
 
 
