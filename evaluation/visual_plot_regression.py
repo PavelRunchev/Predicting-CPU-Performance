@@ -13,7 +13,6 @@ def visual_plot_regression(title: str, y_test, y_pred, r2: float, mae: float, rm
     os.makedirs("plots", exist_ok=True)
     plot_path = f"plots/{plot_name}.png"
 
-    # ✅ генерира графиката само ако не съществува
     if not os.path.exists(plot_path):
 
         plt.figure(figsize=(7, 5))
@@ -32,11 +31,8 @@ def visual_plot_regression(title: str, y_test, y_pred, r2: float, mae: float, rm
 
         plt.tight_layout()
         plt.savefig(plot_path)
-
-        # ✅ много важно за RAM
         plt.close('all')
 
-    # метрики
     ui.label(f"Коефицент на детерминация (R²): {r2:.4f}") \
         .classes("text-lg font-semibold mx-auto")
 
@@ -55,5 +51,4 @@ def visual_plot_regression(title: str, y_test, y_pred, r2: float, mae: float, rm
     ui.label("По-ниските стойности показват по-висока точност на прогнозиране") \
         .classes("text-sm text-gray-500 mx-auto")
 
-    # показва готовата графика
     ui.image(plot_path).classes("w-[600px] mt-4 mx-auto")
