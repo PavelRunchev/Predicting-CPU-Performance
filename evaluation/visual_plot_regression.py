@@ -27,6 +27,6 @@ def visual_plot_regression( title: str, y_test, y_pred, r2: float, mae: float, r
 
     plot_path = f"plots/{plot_name}.png"
     plt.savefig(plot_path)
-
+    plt.close()
 
     ui.image(plot_path).classes("w-[600px] mt-4 mx-auto")
