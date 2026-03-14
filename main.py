@@ -74,79 +74,79 @@ def build_ui():
 
     ui.label("Представяне на алгоритмите за машинно обучение един по-един с данните").classes("text-2xl font-semibold mt-6 pl-6 mx-auto").style("color: var(--primary); text-indent: 40px;")
 
-    # render all models
-    # linear_regression_result = predict_with_linear_regression()
-    # get_model_info_linear_regression()
-    #
-    # #Random Forest
-    # random_forest_result = predict_with_random_forest()
-    # get_model_info_random_forest()
-    #
-    # #Ridge Regression
-    # ridge_regression_result = predict_with_ridge()
-    # get_model_info_ridge_regression()
-    #
-    # #Lasso Regression
-    # lasso_regression_result = predict_with_lasso()
-    # get_model_info_lasso_regression()
-    #
-    # #Polynomial Regression
-    # polynomial_regression_result = predict_with_polynomial_regression()
-    # get_model_info_polynomial_regression()
-    #
-    # #Decision Tree
-    # decision_tree_result = predict_with_decision_tree()
-    # get_model_info_decision_tree()
-    #
-    # #Suppoirt Vector Regression
-    # support_vector_regression_result = predict_with_support_vector_regression()
-    # get_model_info_support_vector_regression()
-    #
-    # #Gradient Boosting
-    # gradient_boosting_result = predict_with_gradient_boosting()
-    # get_model_info_gradient_boosting()
+    #render all models
+    linear_regression_result = predict_with_linear_regression()
+    get_model_info_linear_regression()
 
-    # ui.label("Кръстосана валидация и защо се използва").classes("text-2xl font-semibold mt-8 pl-6").style("color: var(--primary); text-indent: 40px;")
-    # ui.html(
-    #     "Кръстосаната валидация <span class='font-bold'>(Cross-Validation)</span> е метод за оценка на качеството на машинно-обучителен модел. "
-    #     "Вместо моделът да се тества само върху една тестова извадка, данните се разделят на няколко части <span class='font-bold'>(folds)</span>. Моделът се обучава многократно, като всеки път се използва различна част от данните за тестване. "
-    #     "По този начин се постига по-надеждна и обективна оценка на представянето на модела. Кръстосаната валидация показва дали моделът се справя стабилно върху различни части от данните и намалява риска от <span class='font-bold'>overfitting</span>. "
-    #     "Това позволява по-коректно сравнение между различните алгоритми за машинно обучение. "
-    # ).classes("text-base leading-relaxed pl-6").style("text-indent: 40px")
-    #
-    # # cross validation with linear regression
-    # cross_validation(get_model_linear_regression)
-    # # cross validation with random forest
-    # cross_validation(get_model_random_forest)
-    # # cross validation with redge regression
-    # cross_validation(get_model_Ridge_regression)
-    # # cross validation with lasso regression
-    # cross_validation(get_model_Lasso_regression)
-    # # cross validation with polynomial regression
-    # cross_validation(get_model_Polynomial_regression)
-    # # cross validation with decision tree
-    # cross_validation(get_model_decision_tree)
-    # # cross validation with support vector regression
-    # cross_validation(get_model_support_vector_regression)
-    # # cross validation with gradient boosting
-    # cross_validation(get_model_gradient_boosting)
+    #Random Forest
+    random_forest_result = predict_with_random_forest()
+    get_model_info_random_forest()
 
-    # results = [
-    #     linear_regression_result,
-    #     random_forest_result,
-    #     gradient_boosting_result,
-    #     polynomial_regression_result,
-    #     support_vector_regression_result,
-    #     decision_tree_result,
-    #     ridge_regression_result,
-    #     lasso_regression_result
-    # ]
-    #
-    # run_benchmark(results)
-    #
-    # show_model_categories()
-    #
-    # get_model_comparison_table()
+    #Ridge Regression
+    ridge_regression_result = predict_with_ridge()
+    get_model_info_ridge_regression()
+
+    #Lasso Regression
+    lasso_regression_result = predict_with_lasso()
+    get_model_info_lasso_regression()
+
+    #Polynomial Regression
+    polynomial_regression_result = predict_with_polynomial_regression()
+    get_model_info_polynomial_regression()
+
+    #Decision Tree
+    decision_tree_result = predict_with_decision_tree()
+    get_model_info_decision_tree()
+
+    #Suppoirt Vector Regression
+    support_vector_regression_result = predict_with_support_vector_regression()
+    get_model_info_support_vector_regression()
+
+    #Gradient Boosting
+    gradient_boosting_result = predict_with_gradient_boosting()
+    get_model_info_gradient_boosting()
+
+    ui.label("Кръстосана валидация и защо се използва").classes("text-2xl font-semibold mt-8 pl-6").style("color: var(--primary); text-indent: 40px;")
+    ui.html(
+        "Кръстосаната валидация <span class='font-bold'>(Cross-Validation)</span> е метод за оценка на качеството на машинно-обучителен модел. "
+        "Вместо моделът да се тества само върху една тестова извадка, данните се разделят на няколко части <span class='font-bold'>(folds)</span>. Моделът се обучава многократно, като всеки път се използва различна част от данните за тестване. "
+        "По този начин се постига по-надеждна и обективна оценка на представянето на модела. Кръстосаната валидация показва дали моделът се справя стабилно върху различни части от данните и намалява риска от <span class='font-bold'>overfitting</span>. "
+        "Това позволява по-коректно сравнение между различните алгоритми за машинно обучение. "
+    ).classes("text-base leading-relaxed pl-6").style("text-indent: 40px")
+
+    # cross validation with linear regression
+    cross_validation(get_model_linear_regression)
+    # cross validation with random forest
+    cross_validation(get_model_random_forest)
+    # cross validation with redge regression
+    cross_validation(get_model_Ridge_regression)
+    # cross validation with lasso regression
+    cross_validation(get_model_Lasso_regression)
+    # cross validation with polynomial regression
+    cross_validation(get_model_Polynomial_regression)
+    # cross validation with decision tree
+    cross_validation(get_model_decision_tree)
+    # cross validation with support vector regression
+    cross_validation(get_model_support_vector_regression)
+    # cross validation with gradient boosting
+    cross_validation(get_model_gradient_boosting)
+
+    results = [
+        linear_regression_result,
+        random_forest_result,
+        gradient_boosting_result,
+        polynomial_regression_result,
+        support_vector_regression_result,
+        decision_tree_result,
+        ridge_regression_result,
+        lasso_regression_result
+    ]
+
+    run_benchmark(results)
+
+    show_model_categories()
+
+    get_model_comparison_table()
 
     # Footer
     with ui.element("footer").classes("w-full text-center mt-16 py-6").style("background-color: rgba(112,165,213,1);"):
