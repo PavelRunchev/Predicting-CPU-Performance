@@ -75,36 +75,36 @@ def build_ui():
     ui.label("Представяне на алгоритмите за машинно обучение един по-един с данните").classes("text-2xl font-semibold mt-6 pl-6 mx-auto").style("color: var(--primary); text-indent: 40px;")
 
     # render all models
-    linear_regression_result = predict_with_linear_regression()
-    get_model_info_linear_regression()
-
-    #Random Forest
-    random_forest_result = predict_with_random_forest()
-    get_model_info_random_forest()
-
-    #Ridge Regression
-    ridge_regression_result = predict_with_ridge()
-    get_model_info_ridge_regression()
-
-    #Lasso Regression
-    lasso_regression_result = predict_with_lasso()
-    get_model_info_lasso_regression()
-
-    #Polynomial Regression
-    polynomial_regression_result = predict_with_polynomial_regression()
-    get_model_info_polynomial_regression()
-
-    #Decision Tree
-    decision_tree_result = predict_with_decision_tree()
-    get_model_info_decision_tree()
-
-    #Suppoirt Vector Regression
-    support_vector_regression_result = predict_with_support_vector_regression()
-    get_model_info_support_vector_regression()
-
-    #Gradient Boosting
-    gradient_boosting_result = predict_with_gradient_boosting()
-    get_model_info_gradient_boosting()
+    # linear_regression_result = predict_with_linear_regression()
+    # get_model_info_linear_regression()
+    #
+    # #Random Forest
+    # random_forest_result = predict_with_random_forest()
+    # get_model_info_random_forest()
+    #
+    # #Ridge Regression
+    # ridge_regression_result = predict_with_ridge()
+    # get_model_info_ridge_regression()
+    #
+    # #Lasso Regression
+    # lasso_regression_result = predict_with_lasso()
+    # get_model_info_lasso_regression()
+    #
+    # #Polynomial Regression
+    # polynomial_regression_result = predict_with_polynomial_regression()
+    # get_model_info_polynomial_regression()
+    #
+    # #Decision Tree
+    # decision_tree_result = predict_with_decision_tree()
+    # get_model_info_decision_tree()
+    #
+    # #Suppoirt Vector Regression
+    # support_vector_regression_result = predict_with_support_vector_regression()
+    # get_model_info_support_vector_regression()
+    #
+    # #Gradient Boosting
+    # gradient_boosting_result = predict_with_gradient_boosting()
+    # get_model_info_gradient_boosting()
 
     # ui.label("Кръстосана валидация и защо се използва").classes("text-2xl font-semibold mt-8 pl-6").style("color: var(--primary); text-indent: 40px;")
     # ui.html(
@@ -131,22 +131,22 @@ def build_ui():
     # # cross validation with gradient boosting
     # cross_validation(get_model_gradient_boosting)
 
-    results = [
-        linear_regression_result,
-        random_forest_result,
-        gradient_boosting_result,
-        polynomial_regression_result,
-        support_vector_regression_result,
-        decision_tree_result,
-        ridge_regression_result,
-        lasso_regression_result
-    ]
-
-    run_benchmark(results)
-
-    show_model_categories()
-
-    get_model_comparison_table()
+    # results = [
+    #     linear_regression_result,
+    #     random_forest_result,
+    #     gradient_boosting_result,
+    #     polynomial_regression_result,
+    #     support_vector_regression_result,
+    #     decision_tree_result,
+    #     ridge_regression_result,
+    #     lasso_regression_result
+    # ]
+    #
+    # run_benchmark(results)
+    #
+    # show_model_categories()
+    #
+    # get_model_comparison_table()
 
     # Footer
     with ui.element("footer").classes("w-full text-center mt-16 py-6").style("background-color: rgba(112,165,213,1);"):
