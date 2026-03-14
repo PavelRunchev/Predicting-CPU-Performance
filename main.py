@@ -106,30 +106,30 @@ def build_ui():
     gradient_boosting_result = predict_with_gradient_boosting()
     get_model_info_gradient_boosting()
 
-    ui.label("Кръстосана валидация и защо се използва").classes("text-2xl font-semibold mt-8 pl-6").style("color: var(--primary); text-indent: 40px;")
-    ui.html(
-        "Кръстосаната валидация <span class='font-bold'>(Cross-Validation)</span> е метод за оценка на качеството на машинно-обучителен модел. "
-        "Вместо моделът да се тества само върху една тестова извадка, данните се разделят на няколко части <span class='font-bold'>(folds)</span>. Моделът се обучава многократно, като всеки път се използва различна част от данните за тестване. "
-        "По този начин се постига по-надеждна и обективна оценка на представянето на модела. Кръстосаната валидация показва дали моделът се справя стабилно върху различни части от данните и намалява риска от <span class='font-bold'>overfitting</span>. "
-        "Това позволява по-коректно сравнение между различните алгоритми за машинно обучение. "
-    ).classes("text-base leading-relaxed pl-6").style("text-indent: 40px")
-
-    # cross validation with linear regression
-    cross_validation(get_model_linear_regression)
-    # cross validation with random forest
-    cross_validation(get_model_random_forest)
-    # cross validation with redge regression
-    cross_validation(get_model_Ridge_regression)
-    # cross validation with lasso regression
-    cross_validation(get_model_Lasso_regression)
-    # cross validation with polynomial regression
-    cross_validation(get_model_Polynomial_regression)
-    # cross validation with decision tree
-    cross_validation(get_model_decision_tree)
-    # cross validation with support vector regression
-    cross_validation(get_model_support_vector_regression)
-    # cross validation with gradient boosting
-    cross_validation(get_model_gradient_boosting)
+    # ui.label("Кръстосана валидация и защо се използва").classes("text-2xl font-semibold mt-8 pl-6").style("color: var(--primary); text-indent: 40px;")
+    # ui.html(
+    #     "Кръстосаната валидация <span class='font-bold'>(Cross-Validation)</span> е метод за оценка на качеството на машинно-обучителен модел. "
+    #     "Вместо моделът да се тества само върху една тестова извадка, данните се разделят на няколко части <span class='font-bold'>(folds)</span>. Моделът се обучава многократно, като всеки път се използва различна част от данните за тестване. "
+    #     "По този начин се постига по-надеждна и обективна оценка на представянето на модела. Кръстосаната валидация показва дали моделът се справя стабилно върху различни части от данните и намалява риска от <span class='font-bold'>overfitting</span>. "
+    #     "Това позволява по-коректно сравнение между различните алгоритми за машинно обучение. "
+    # ).classes("text-base leading-relaxed pl-6").style("text-indent: 40px")
+    #
+    # # cross validation with linear regression
+    # cross_validation(get_model_linear_regression)
+    # # cross validation with random forest
+    # cross_validation(get_model_random_forest)
+    # # cross validation with redge regression
+    # cross_validation(get_model_Ridge_regression)
+    # # cross validation with lasso regression
+    # cross_validation(get_model_Lasso_regression)
+    # # cross validation with polynomial regression
+    # cross_validation(get_model_Polynomial_regression)
+    # # cross validation with decision tree
+    # cross_validation(get_model_decision_tree)
+    # # cross validation with support vector regression
+    # cross_validation(get_model_support_vector_regression)
+    # # cross validation with gradient boosting
+    # cross_validation(get_model_gradient_boosting)
 
     results = [
         linear_regression_result,
