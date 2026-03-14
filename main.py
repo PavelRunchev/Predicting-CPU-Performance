@@ -156,12 +156,15 @@ def build_ui():
 
 build_ui()
 
-port = int(os.environ.get("PORT", 18013))
-ui.run(title="Predicting CPU Performance",
-       host="0.0.0.0",
-       port=port,
-       show=False
-       )
+
+ui.run(
+    title="Predicting CPU Performance",
+    host="0.0.0.0",
+    port=int(os.environ.get("PORT", 8080)),
+    storage_secret="cpu_prediction_app"
+    )
+
+
 
 
 
